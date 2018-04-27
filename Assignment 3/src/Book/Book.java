@@ -22,9 +22,8 @@ public class Book {
 	private SimpleIntegerProperty yearPublished;
 	private SimpleObjectProperty<LocalDate> dateAdded;
 	private SimpleObjectProperty<Publisher> publisher;
-	private BookTableGateway bookGateway;
-
 	
+	private BookTableGateway bookGateway;
 
 	public Book() {
 		id = 0;

@@ -15,6 +15,7 @@ public class Publisher {
 	
 	private int id;
 	private SimpleStringProperty publisherName;
+	
 	private PublisherTableGateway publisherGateway;
 
 	
