@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="13.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="First Name" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="38.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Last Name" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TextField fx:id="FirstName" layoutX="195.0" layoutY="14.0" prefHeight="25.0" prefWidth="325.0" />
+            <TextField fx:id="LastName" layoutX="195.0" layoutY="39.0" prefHeight="25.0" prefWidth="325.0" />
+            <TextField fx:id="Website" layoutX="195.0" layoutY="89.0" prefHeight="25.0" prefWidth="325.0" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="63.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Date of Birth" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="88.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Website" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="196.0" layoutY="64.0" />
+            <Label alignment="CENTER" layoutX="24.0" layoutY="129.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Gender" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="346.0" mnemonicParsing="false" onAction="#saveAuthorClicked" prefHeight="40.0" prefWidth="83.0" text="Save" />
+            <ComboBox fx:id="gender" layoutX="195.0" layoutY="127.0" prefWidth="150.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

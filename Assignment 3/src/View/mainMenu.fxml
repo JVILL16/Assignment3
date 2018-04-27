@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+    
+    <top>
+<VBox id="vbox" xmlns:fx="http://javafx.com/fxml">
+   <children>
+         
+   	<MenuBar fx:id="menuBar">
+   		<menus>
+   		<Menu text="Inventory">
+               <items>
+                  <MenuItem fx:id="authorList" onAction="#handleMenuAction" text="Author List" />
+                        <SeparatorMenuItem />
+                        <MenuItem fx:id="addAuthor" onAction="#handleMenuAction" text="Add Author" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="bookList" mnemonicParsing="false" onAction="#handleMenuAction" text="Book List" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="addBook" mnemonicParsing="false" onAction="#handleMenuAction" text="Add Book" />
+                  <SeparatorMenuItem />
+                  <MenuItem fx:id="menuItemExit" onAction="#handleMenuAction" text="Exit" />
+               </items>
+   		</Menu>
+   		</menus>
+   	</MenuBar>
+   </children>
+</VBox>
+</top>
+
+<center>
+<GridPane alignment="center" hgap="10" styleClass="root" vgap="10" xmlns:fx="http://javafx.com/fxml">
+<padding><Insets bottom="10" left="25" right="25" top="25" /></padding>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      
+</GridPane>
+</center>
+
+</BorderPane>
