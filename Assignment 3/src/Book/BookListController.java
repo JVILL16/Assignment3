@@ -35,7 +35,6 @@ public class BookListController implements Initializable, MyController, GeneralC
 	 
 	 public BookListController(BookTableGateway bookGateway) {
 	    	this.bookGateway = bookGateway;
-	    	//authors = this.gateway.getAuthors();
 	    	fetchBook();
 	 }
 	 
@@ -52,7 +51,7 @@ public class BookListController implements Initializable, MyController, GeneralC
 	 @FXML void switchToBookDetailView(MouseEvent event) throws IOException {
 			try {
 				if(event.getClickCount()==2) {
-					logger.info("Author double clicked.");
+					logger.info("Book double clicked.");
 					SingletonSwitcher.getInstance().changeView(1,bookList.getSelectionModel().getSelectedItem());
 				}
 			}catch(Exception e) {

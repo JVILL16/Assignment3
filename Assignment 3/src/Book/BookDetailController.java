@@ -43,12 +43,12 @@ private static Logger logger = LogManager.getLogger();
     @FXML
     public void saveBookClicked() {
     	
-    	logger.info("Author's info is saved");
+    	logger.info("Book's info is saved");
     	
     	if(!book.isValidTitle(book.getTitle())) {
-    		logger.error("Invalid Author name " + book.getTitle());
+    		logger.error("Invalid Book " + book.getTitle());
     		
-    		AlertHelper.showWarningMessage("ERROR", "Author's Name Invalid", "The name that you inputed is invalid, try again.");
+    		AlertHelper.showWarningMessage("ERROR", "Book Invalid", "The book that you inputed is invalid, try again.");
     	return;
     	}
     	book.save();
