@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import Controller.GeneralController;
 import Database.AlertHelper;
+import Model.Author;
 import View.MyController;
 import javafx.collections.FXCollections;
 
@@ -29,15 +30,18 @@ private static Logger logger = LogManager.getLogger();
    
     private Book book;
     private Publisher publisher;
+    private Author author;
 
     
     public BookDetailController() {
     	
     }
     
-    public BookDetailController(Book book) {
+    public BookDetailController(Book book, Publisher publisher, Author author) {
     	this();
         this.book = book;
+        this.publisher = publisher;
+        this.author = author;
         logger.info("Now showing: " + book.toString());
     }
     @FXML

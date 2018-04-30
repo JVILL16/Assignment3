@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import Book.Book;
 import Database.AuthorTableGateway;
 import Model.Author;
 import View.Launcher;
@@ -40,6 +41,9 @@ public class MainMenuController implements Initializable{
 			Author author = new Author();
 			author.setGateway(new AuthorTableGateway(SingletonSwitcher.getInstance().getConnection()));	
 			SingletonSwitcher.getInstance().changeView(1, author);
+		}else if(event.getSource() == bookList) {
+			logger.info("BookList button selected.");
+			SingletonSwitcher.getInstance().changeView(2, new Book());
 		}else if(event.getSource() == menuItemExit) {
 			logger.info("Exiting...");
 			System.exit(0);

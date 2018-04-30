@@ -52,7 +52,7 @@ public class BookListController implements Initializable, MyController, GeneralC
 			try {
 				if(event.getClickCount()==2) {
 					logger.info("Book double clicked.");
-					SingletonSwitcher.getInstance().changeView(1,bookList.getSelectionModel().getSelectedItem());
+					SingletonSwitcher.getInstance().changeView(3,bookList.getSelectionModel().getSelectedItem());
 				}
 			}catch(Exception e) {
 				
