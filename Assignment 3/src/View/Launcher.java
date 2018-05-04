@@ -42,7 +42,7 @@ public class Launcher extends Application{
 		SingletonSwitcher viewSwitch = SingletonSwitcher.getInstance();
 		viewSwitch.setConnection(conn);
 		viewSwitch.setRootNode((BorderPane) rootNode);
-	//	viewSwitch.setAuthors(authors);
+		viewSwitch.setAuthors(authors);
 
 
 

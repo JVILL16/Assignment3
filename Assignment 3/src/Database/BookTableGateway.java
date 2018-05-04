@@ -18,11 +18,14 @@ import View.Launcher;
 public class BookTableGateway {
 	
 	private static Logger logger = LogManager.getLogger(Launcher.class);
-	private Connection conn;
+	private Connection conn = null;
 	
 	public BookTableGateway(Connection conn) {
 		this.conn = conn;
 	}
+//	public BookTableGateway() {
+//
+//	}
 	public void deleteBook(Book book) throws AppException {
 		PreparedStatement st = null;
 		try {
@@ -141,6 +144,50 @@ public class BookTableGateway {
 		}
 		return books;
 	}
-	
+	 public List<Book> bookSearch(String search) throws AppException {
+			List<Book> books = new ArrayList<>();
+
+			PreparedStatement st = null;
+
+			try {
+				
+				//conn = ConnectionFactory.createConnection();
+				
+				String query = "select * from BookTable inner join PublisherTable p on publisher_id = p.id";
+				if(search != null)
+					query += " where title like ?";
+				
+				st = conn.prepareStatement(query);
+
+				if (search != null)
+					st.setString(1, "%" + search + "%");
+				
+				ResultSet rs = st.executeQuery();
+				while(rs.next()) {
+
+					int id = rs.getInt("id");
+					String title = rs.getString("title");
+					String summary = rs.getString("summary");
+					int yearPublished = rs.getInt("year_published");
+					String isbn = rs.getString("isbn");
+					Date dateAdded = rs.getDate("date_added");
+
+					Publisher publisher = new Publisher(rs.getString("publisher_name"));
+					publisher.setId(rs.getInt("publisher_id"));
+					
+					Book book = new Book(title, summary, yearPublished, publisher, isbn, dateAdded.toLocalDate());
+					book.setId(id);
+					book.setBookGateway(this);
+					books.add(book);
+				
+				}
+			} catch (SQLException e) {
+			
+				///e.printStackTrace();
+				throw new AppException("BookTable fetchBooks failed");
+			}
+			return books;
+		}
+		
 }
 

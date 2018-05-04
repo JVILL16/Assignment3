@@ -31,6 +31,7 @@ public class SingletonSwitcher {
 	private ObservableList<Author> authors;
 	private ObservableList<Book> books;
 	private List<Publisher> publishers;
+
 	public static final int AUTHOR_LIST = 0;
 	public static final int AUTHOR_DETAIL = 1;
 	public static final int BOOK_LIST = 2;
@@ -39,6 +40,7 @@ public class SingletonSwitcher {
 	static  SingletonSwitcher singletonController = null;
 	private BorderPane rootPane;
 	private Connection conn;
+	private BookTableGateway bookGateway;
 	private PublisherTableGateway pubGateway;
 	
 	private SingletonSwitcher() {}
@@ -55,9 +57,8 @@ public class SingletonSwitcher {
 		this.rootPane = rootNode;
 	}
 	
-	public void setAuthors(ObservableList<Author> authorList, ObservableList<Book> bookList){
+	public void setAuthors(ObservableList<Author> authorList){
 		this.authors = authorList;
-		this.books = bookList;
 
 	}
 	
@@ -77,13 +78,13 @@ public class SingletonSwitcher {
 					break;
 				case BOOK_LIST:
 					fxmlFile = this.getClass().getResource("BookListView.fxml");
-					controller = new BookListController(new BookTableGateway(conn));
+					controller = new BookListController(new BookTableGateway(conn), new PublisherTableGateway(conn));
 					break;
 				case BOOK_DETAIL:
 					pubGateway = new PublisherTableGateway(conn);
 					publishers = pubGateway.getPublisher();
 					fxmlFile = this.getClass().getResource("BookDetailView.fxml");
-					controller = new BookDetailController();
+					controller = new BookDetailController((Book) arg, publishers);
 					break;
 			}
 		

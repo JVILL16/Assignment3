@@ -1,6 +1,7 @@
 package Book;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.scene.control.*;
@@ -12,7 +13,7 @@ import Database.AlertHelper;
 import Model.Author;
 import View.MyController;
 import javafx.collections.FXCollections;
-
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
@@ -21,7 +22,7 @@ public class BookDetailController implements Initializable, MyController, Genera
 private static Logger logger = LogManager.getLogger();
 	
     @FXML private TextField Title;
-    @FXML private TextField Summary;
+    @FXML private TextArea Summary;
     @FXML private TextField ISBN;
     @FXML private TextField YearPublished;
     @FXML private ComboBox<Publisher> Publisher;
@@ -29,19 +30,17 @@ private static Logger logger = LogManager.getLogger();
     @FXML private Button Save;
    
     private Book book;
-    private Publisher publisher;
-    private Author author;
+    private List<Publisher> publishers;
 
     
     public BookDetailController() {
     	
     }
     
-    public BookDetailController(Book book, Publisher publisher, Author author) {
+    public BookDetailController(Book book, List<Publisher> publishers) {
     	this();
         this.book = book;
-        this.publisher = publisher;
-        this.author = author;
+        this.publishers = publishers;
         logger.info("Now showing: " + book.toString());
     }
     @FXML
@@ -61,7 +60,7 @@ private static Logger logger = LogManager.getLogger();
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		Publisher.setItems(FXCollections.observableArrayList(publisher));
+		Publisher.setItems(FXCollections.observableArrayList(publishers));
 
         Title.textProperty().bindBidirectional(book.titleProperty());
         ISBN.textProperty().bindBidirectional(book.isbnProperty());

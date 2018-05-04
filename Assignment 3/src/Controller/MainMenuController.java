@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import Book.Book;
 import Database.AuthorTableGateway;
+import Database.BookTableGateway;
 import Model.Author;
 import View.Launcher;
 import View.SingletonSwitcher;
@@ -44,6 +45,11 @@ public class MainMenuController implements Initializable{
 		}else if(event.getSource() == bookList) {
 			logger.info("BookList button selected.");
 			SingletonSwitcher.getInstance().changeView(2, new Book());
+		}else if (event.getSource() == addBook){ 
+			logger.info("AddBook button selected.");
+			Book book = new Book();
+			book.setBookGateway(new BookTableGateway(SingletonSwitcher.getInstance().getConnection()));	
+			SingletonSwitcher.getInstance().changeView(3, book);
 		}else if(event.getSource() == menuItemExit) {
 			logger.info("Exiting...");
 			System.exit(0);

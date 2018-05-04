@@ -31,14 +31,12 @@ public class Publisher {
 		this();
 		setPublisherName(publisherName);
 	}
-	
-	public void save() throws AppException {
-		if(this.getId() == 0) {
-			publisherGateway.insertPublisher(this);
-		} else {
-			publisherGateway.updatePublisher(this);
-		}
-	}
+	/*public Publisher(int id, String publisherName) 
+	{
+		this();
+		setId(id);
+		setPublisherName(publisherName);
+	}*/
 	
 	public boolean isValidID(int id) {		
 		if(id < 0)
