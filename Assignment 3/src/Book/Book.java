@@ -171,7 +171,7 @@ public class Book {
 		return isbn;
 	}
 	public String getISBN() {
-		return title.get();
+		return isbn.get();
 	}
 	public void setISBN(String isbn) {
 		this.isbn.set(isbn);

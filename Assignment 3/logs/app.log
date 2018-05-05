@@ -1753,3 +1753,26 @@
 16:13:45.543 INFO  Book.BookDetailController : Now showing: Title Name: null
 16:14:15.595 INFO  Book.BookDetailController : Book's info is saved
 16:14:18.386 INFO  View.Launcher : Closing connection...
+17:48:35.825 INFO  View.Launcher : Creating connection...
+17:48:37.127 INFO  Controller.MainMenuController : Main Menu Loaded.
+17:48:40.741 INFO  Controller.MainMenuController : AddBook button selected.
+17:48:40.808 INFO  Book.BookDetailController : Now showing: Title Name: null
+17:48:43.369 INFO  View.Launcher : Closing connection...
+17:48:58.641 INFO  View.Launcher : Creating connection...
+17:48:59.437 INFO  Controller.MainMenuController : Main Menu Loaded.
+17:49:02.428 INFO  Controller.MainMenuController : AddBook button selected.
+17:49:02.487 INFO  Book.BookDetailController : Now showing: Title Name: null
+17:49:04.808 INFO  View.Launcher : Closing connection...
+17:57:48.695 INFO  View.Launcher : Creating connection...
+17:57:49.505 INFO  Controller.MainMenuController : Main Menu Loaded.
+17:57:52.581 INFO  Controller.MainMenuController : BookList button selected.
+17:58:05.716 INFO  Controller.MainMenuController : AddBook button selected.
+17:58:05.744 INFO  Book.BookDetailController : Now showing: Title Name: null
+17:59:06.552 INFO  Book.BookDetailController : Book's info is saved
+17:59:06.612 INFO  Database.BookTableGateway : New id for book is 4
+18:00:12.102 INFO  Controller.MainMenuController : BookList button selected.
+18:00:15.667 INFO  Book.BookListController : Book double clicked.
+18:00:15.705 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+18:00:45.487 INFO  Book.BookDetailController : Book's info is saved
+18:01:00.983 INFO  Book.BookDetailController : Book's info is saved
+18:01:15.229 INFO  View.Launcher : Closing connection...

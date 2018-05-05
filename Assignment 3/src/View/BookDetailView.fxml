@@ -29,26 +29,32 @@
           </font>
         </Label>
             <TextField fx:id="Title" layoutX="195.0" layoutY="14.0" prefHeight="25.0" prefWidth="325.0" />
-            <TextField fx:id="ISBN" layoutX="195.0" layoutY="280.0" prefHeight="25.0" prefWidth="325.0" />
-            <Label alignment="CENTER" layoutX="21.0" layoutY="247.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Date Added" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <TextField fx:id="ISBN" layoutX="195.0" layoutY="250.0" prefHeight="25.0" prefWidth="325.0" />
+            <Label alignment="CENTER" layoutX="21.0" layoutY="223.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Date Added" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="21.0" layoutY="282.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="ISBN" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label alignment="CENTER" layoutX="21.0" layoutY="252.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="ISBN" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <DatePicker fx:id="DateAdded" layoutX="195.0" layoutY="245.0" />
-            <Label alignment="CENTER" layoutX="21.0" layoutY="316.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Publisher" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <DatePicker fx:id="DateAdded" layoutX="195.0" layoutY="219.0" />
+            <Label alignment="CENTER" layoutX="21.0" layoutY="284.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Publisher" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="Save" layoutX="457.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveBookClicked" prefHeight="40.0" prefWidth="83.0" text="Save" />
-            <ComboBox fx:id="Publisher" layoutX="195.0" layoutY="314.0" prefWidth="150.0" promptText="Unknown" />
-            <TextArea fx:id="Summary" layoutX="195.0" layoutY="45.0" prefHeight="200.0" prefWidth="325.0" />
+            <Button fx:id="Save" layoutX="437.0" layoutY="329.0" mnemonicParsing="false" onAction="#saveBookClicked" prefHeight="40.0" prefWidth="83.0" text="Save" />
+            <ComboBox fx:id="Publisher" layoutX="195.0" layoutY="280.0" prefHeight="31.0" prefWidth="325.0" promptText="Unknown" />
+            <TextArea fx:id="Summary" layoutX="195.0" layoutY="45.0" prefHeight="149.0" prefWidth="325.0" />
+            <Label alignment="CENTER" layoutX="21.0" layoutY="194.0" prefHeight="27.0" prefWidth="172.0" style="&#10;" text="Year Published" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="YearPublished" layoutX="195.0" layoutY="192.0" prefHeight="31.0" prefWidth="325.0" />
       </children>
     </AnchorPane>
   </children>

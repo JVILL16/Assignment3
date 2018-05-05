@@ -56,7 +56,7 @@ public class BookTableGateway {
 			st.setString(1, book.getTitle());
 			st.setString(2, book.getSummary());
 			st.setInt(3, book.getYearPub());
-			st.setObject(4, book.getPublisher());
+			st.setInt(4, book.getPublisher().getId());
 			st.setString(5, book.getISBN());
 			st.setDate(6, Date.valueOf(book.getDate()));
 			st.executeUpdate();
@@ -88,7 +88,7 @@ public class BookTableGateway {
 			st.setString(1, book.getTitle());
 			st.setString(2, book.getSummary());
 			st.setInt(3, book.getYearPub());
-			st.setObject(4, book.getPublisher());
+			st.setInt(4, book.getPublisher().getId());
 			st.setString(5, book.getISBN());
 			st.setDate(6, Date.valueOf(book.getDate()));
 			st.setInt(7, book.getId());

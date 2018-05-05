@@ -64,6 +64,7 @@ private static Logger logger = LogManager.getLogger();
 
         Title.textProperty().bindBidirectional(book.titleProperty());
         ISBN.textProperty().bindBidirectional(book.isbnProperty());
+        YearPublished.textProperty().bindBidirectional(book.yearPublishedProperty(), new ConvertYear());
         Summary.textProperty().bindBidirectional(book.summaryProperty());
         Publisher.valueProperty().bindBidirectional(book.publisherProperty());
         DateAdded.valueProperty().bindBidirectional(book.dateAddedProperty());
