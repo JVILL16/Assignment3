@@ -1,8 +1,10 @@
-package Book;
+package Model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import Database.AppException;
+import Database.AuditEntryTableGateway;
 import Database.BookTableGateway;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -24,6 +26,7 @@ public class Book {
 	private SimpleObjectProperty<Publisher> publisher;
 	
 	private BookTableGateway bookGateway;
+	private AuditEntryTableGateway auditGateway;
 
 	public Book() {
 		id = 0;
@@ -33,6 +36,7 @@ public class Book {
 		yearPublished = new SimpleIntegerProperty();
 		dateAdded = new SimpleObjectProperty<LocalDate>();
 		publisher = new SimpleObjectProperty<Publisher>();
+		auditGateway = new AuditEntryTableGateway();
 	}
 
 	public Book(String title, String summary, Integer yearPublished, Publisher publisher, String isbn, LocalDate dateAdded) 
@@ -186,5 +190,16 @@ public class Book {
 	}	
 	public void setDate(LocalDate dateAdded) {
 		this.dateAdded.set(dateAdded);
+	}
+	
+	public List<AuditTrailEntrys> getAudits() {
+		 List<AuditTrailEntrys> audits;
+		 audits = this.bookGateway.getAuditTrail(this);
+		 for(AuditTrailEntrys entry : audits) 	 
+			 entry.setAuditGateway(auditGateway);
+			 
+		 return audits;
+		//return this.bookGateway.getAuditTrail(this);
+		
 	}
 }

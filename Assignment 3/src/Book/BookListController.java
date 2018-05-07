@@ -19,6 +19,7 @@ import Database.AppException;
 import Database.BookTableGateway;
 import Database.ConnectionFactory;
 import Database.PublisherTableGateway;
+import Model.Book;
 import View.MyController;
 import View.SingletonSwitcher;
 import javafx.collections.FXCollections;
@@ -40,8 +41,8 @@ public class BookListController implements Initializable, MyController, GeneralC
 	 @FXML private Button delete;
 	 @FXML private Button searchButton;
 	 @FXML private TextField searchTitle;
-	private BookTableGateway bookGateway;
-	private PublisherTableGateway pubGateway;
+	 private BookTableGateway bookGateway;
+	 private PublisherTableGateway pubGateway;
 
 	 
 //	 public BookListController(ObservableList<Book> books) {
@@ -50,7 +51,7 @@ public class BookListController implements Initializable, MyController, GeneralC
 //	 }
 	 
 	 public BookListController(BookTableGateway bookGateway, PublisherTableGateway pubGateway) {
-		this.bookGateway = bookGateway;
+		 	this.bookGateway = bookGateway;
 	    	this.pubGateway = pubGateway;
 	    	fetchBook(null);
 	 }

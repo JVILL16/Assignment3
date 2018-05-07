@@ -7,10 +7,10 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Book.Book;
 import Database.AuthorTableGateway;
 import Database.BookTableGateway;
 import Model.Author;
+import Model.Book;
 import View.Launcher;
 import View.SingletonSwitcher;
 import javafx.event.ActionEvent;

@@ -1,6 +1,5 @@
-package Book;
+package Model;
 
-import Database.AppException;
 import Database.PublisherTableGateway;
 
 import javafx.beans.property.SimpleStringProperty;

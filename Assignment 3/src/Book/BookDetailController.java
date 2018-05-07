@@ -10,10 +10,16 @@ import org.apache.logging.log4j.Logger;
 
 import Controller.GeneralController;
 import Database.AlertHelper;
+import Database.AppException;
+import Model.AuditTrailEntrys;
 import Model.Author;
+import Model.Book;
+import Model.Publisher;
 import View.MyController;
+import View.SingletonSwitcher;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
@@ -28,7 +34,8 @@ private static Logger logger = LogManager.getLogger();
     @FXML private ComboBox<Publisher> Publisher;
     @FXML private DatePicker DateAdded;
     @FXML private Button Save;
-   
+    @FXML private Button AuditTrail;
+    
     private Book book;
     private List<Publisher> publishers;
 
@@ -56,10 +63,29 @@ private static Logger logger = LogManager.getLogger();
     	}
     	book.save();
     }
+    
+    @FXML
+    public void auditTrailViewClicked(ActionEvent event) {
+    	logger.info("Audit Trail View for Book");
+    	try {
+	    	List<AuditTrailEntrys> audits = book.getAudits();
+	    	if(audits.size() > 0) {
+	    		logger.info("Audits: " + audits);
+	    	
+	        	SingletonSwitcher.getInstance().changeView(4, book);
+	    	}
+	    	else {
+	    		logger.error("No Audit Trail Exist");
+	    		AlertHelper.showWarningMessage("ERROR", "Book has no Audit Trail", "The audit trail does not exist");
+	    	}
+    	}catch(AppException e) {
+	    		e.printStackTrace();
+	    }
+    	
+    }
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
 		Publisher.setItems(FXCollections.observableArrayList(publishers));
 
         Title.textProperty().bindBidirectional(book.titleProperty());

@@ -8,10 +8,9 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Book.Book;
+import Book.BATListController;
 import Book.BookDetailController;
 import Book.BookListController;
-import Book.Publisher;
 import Controller.AuthorDetailController;
 import Controller.AuthorListController;
 import Controller.GeneralController;
@@ -19,7 +18,10 @@ import Database.AppException;
 import Database.AuthorTableGateway;
 import Database.BookTableGateway;
 import Database.PublisherTableGateway;
+import Model.AuditTrailEntrys;
 import Model.Author;
+import Model.Book;
+import Model.Publisher;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,11 +33,13 @@ public class SingletonSwitcher {
 	private ObservableList<Author> authors;
 	private ObservableList<Book> books;
 	private List<Publisher> publishers;
+	private List<AuditTrailEntrys> audits;
 
 	public static final int AUTHOR_LIST = 0;
 	public static final int AUTHOR_DETAIL = 1;
 	public static final int BOOK_LIST = 2;
 	public static final int BOOK_DETAIL = 3;
+	public static final int BOOK_AUDIT_TRAIL = 4;
 	private static Logger logger = LogManager.getLogger(Launcher.class);
 	static  SingletonSwitcher singletonController = null;
 	private BorderPane rootPane;
@@ -86,6 +90,13 @@ public class SingletonSwitcher {
 					fxmlFile = this.getClass().getResource("BookDetailView.fxml");
 					controller = new BookDetailController((Book) arg, publishers);
 					break;
+				case BOOK_AUDIT_TRAIL:
+					bookGateway = new BookTableGateway(conn);
+					audits = bookGateway.getAuditTrail((Book) arg);
+					fxmlFile = this.getClass().getResource("AuditTrailView.fxml");
+					controller = new BATListController((Book) arg, audits);
+					break;
+					
 			}
 		
 			FXMLLoader loader = new FXMLLoader(fxmlFile);

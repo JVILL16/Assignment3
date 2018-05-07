@@ -1776,3 +1776,490 @@
 18:00:45.487 INFO  Book.BookDetailController : Book's info is saved
 18:01:00.983 INFO  Book.BookDetailController : Book's info is saved
 18:01:15.229 INFO  View.Launcher : Closing connection...
+12:52:53.537 INFO  View.Launcher : Creating connection...
+12:52:54.201 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:52:57.687 INFO  Controller.MainMenuController : BookList button selected.
+12:53:15.167 INFO  View.Launcher : Closing connection...
+19:36:28.470 INFO  View.Launcher : Creating connection...
+19:36:29.269 INFO  Controller.MainMenuController : Main Menu Loaded.
+19:36:33.195 INFO  Controller.MainMenuController : AddBook button selected.
+19:36:33.256 INFO  Book.BookDetailController : Now showing: Title Name: null
+19:36:37.540 INFO  View.Launcher : Closing connection...
+19:36:48.114 INFO  View.Launcher : Creating connection...
+19:36:48.782 INFO  Controller.MainMenuController : Main Menu Loaded.
+19:36:51.356 INFO  Controller.MainMenuController : AddBook button selected.
+19:36:51.415 INFO  Book.BookDetailController : Now showing: Title Name: null
+19:36:56.091 INFO  Book.BookDetailController : Audit Trail for Book
+19:37:09.327 INFO  Controller.MainMenuController : BookList button selected.
+19:37:12.468 INFO  Book.BookListController : Book double clicked.
+19:37:12.493 INFO  Book.BookDetailController : Now showing: Title Name: test book
+19:37:15.912 INFO  Book.BookDetailController : Audit Trail for Book
+19:37:18.120 INFO  View.Launcher : Closing connection...
+00:39:07.895 INFO  View.Launcher : Creating connection...
+00:39:10.319 INFO  Controller.MainMenuController : Main Menu Loaded.
+00:39:14.655 INFO  Controller.MainMenuController : AddBook button selected.
+00:39:14.715 INFO  Book.BookDetailController : Now showing: Title Name: null
+00:39:25.690 INFO  Book.BookDetailController : Audit Trail View for Book
+00:39:26.343 ERROR Book.BookDetailController : Book doesn't exist
+00:39:38.427 INFO  Controller.MainMenuController : BookList button selected.
+00:39:40.605 INFO  Book.BookListController : Book double clicked.
+00:39:40.633 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+00:39:42.662 INFO  Book.BookDetailController : Audit Trail View for Book
+00:39:42.696 ERROR Book.BookDetailController : Book doesn't exist
+00:40:11.792 INFO  View.Launcher : Closing connection...
+00:42:36.073 INFO  View.Launcher : Creating connection...
+00:42:36.818 INFO  Controller.MainMenuController : Main Menu Loaded.
+00:42:39.612 INFO  Controller.MainMenuController : BookList button selected.
+00:42:41.973 INFO  Book.BookListController : Book double clicked.
+00:42:42.811 INFO  Book.BookDetailController : Now showing: Title Name: another book
+00:42:45.549 INFO  Book.BookDetailController : Audit Trail View for Book
+00:42:45.592 ERROR Book.BookDetailController : No Audit Trail Exist
+00:42:54.788 INFO  View.Launcher : Closing connection...
+00:46:32.094 INFO  View.Launcher : Creating connection...
+00:46:32.851 INFO  Controller.MainMenuController : Main Menu Loaded.
+00:46:36.239 INFO  Controller.MainMenuController : BookList button selected.
+00:46:37.548 INFO  Book.BookListController : Book double clicked.
+00:46:37.580 INFO  Book.BookDetailController : Now showing: Title Name: another book
+00:46:38.724 INFO  Book.BookDetailController : Audit Trail View for Book
+00:46:38.751 ERROR Book.BookDetailController : No Audit Trail Exist
+00:46:45.483 INFO  Controller.MainMenuController : AddBook button selected.
+00:46:45.510 INFO  Book.BookDetailController : Now showing: Title Name: null
+00:46:47.700 INFO  Book.BookDetailController : Audit Trail View for Book
+00:46:47.734 ERROR Book.BookDetailController : No Audit Trail Exist
+00:46:51.648 INFO  Controller.MainMenuController : BookList button selected.
+00:46:53.181 INFO  Book.BookListController : Book double clicked.
+00:46:53.208 INFO  Book.BookDetailController : Now showing: Title Name: test book
+00:46:54.810 INFO  Book.BookDetailController : Audit Trail View for Book
+00:46:54.836 ERROR Book.BookDetailController : No Audit Trail Exist
+00:46:59.297 INFO  View.Launcher : Closing connection...
+00:49:53.669 INFO  View.Launcher : Creating connection...
+00:49:54.440 INFO  Controller.MainMenuController : Main Menu Loaded.
+00:49:56.821 INFO  Controller.MainMenuController : BookList button selected.
+00:49:58.032 INFO  Book.BookListController : Book double clicked.
+00:49:58.064 INFO  Book.BookDetailController : Now showing: Title Name: another book
+00:49:59.437 INFO  Book.BookDetailController : Audit Trail View for Book
+00:49:59.464 ERROR Book.BookDetailController : No Audit Trail Exist
+00:50:04.599 INFO  View.Launcher : Closing connection...
+00:51:02.345 INFO  View.Launcher : Creating connection...
+00:51:03.020 INFO  Controller.MainMenuController : Main Menu Loaded.
+00:51:06.117 INFO  Controller.MainMenuController : BookList button selected.
+00:51:08.140 INFO  Book.BookListController : Book double clicked.
+00:51:08.173 INFO  Book.BookDetailController : Now showing: Title Name: another book
+00:51:09.872 INFO  Book.BookDetailController : Audit Trail View for Book
+00:51:09.901 ERROR Book.BookDetailController : No Audit Trail Exist
+00:51:16.459 INFO  View.Launcher : Closing connection...
+01:00:58.118 INFO  View.Launcher : Creating connection...
+01:00:58.840 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:01:02.661 INFO  Controller.MainMenuController : BookList button selected.
+01:01:06.315 INFO  Book.BookListController : Book double clicked.
+01:01:06.347 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:01:07.973 INFO  Book.BookDetailController : Audit Trail View for Book
+01:01:08.000 ERROR Book.BookDetailController : No Audit Trail Exist
+01:01:17.284 INFO  View.Launcher : Closing connection...
+01:02:23.304 INFO  View.Launcher : Creating connection...
+01:02:23.973 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:02:26.925 INFO  Controller.MainMenuController : AddBook button selected.
+01:02:26.989 INFO  Book.BookDetailController : Now showing: Title Name: null
+01:02:52.635 INFO  Book.BookDetailController : Book's info is saved
+01:02:52.704 INFO  Database.BookTableGateway : New id for book is 5
+01:02:55.395 INFO  Book.BookDetailController : Audit Trail View for Book
+01:02:55.423 ERROR Book.BookDetailController : No Audit Trail Exist
+01:03:00.241 INFO  Controller.MainMenuController : BookList button selected.
+01:03:01.727 INFO  Book.BookListController : Book double clicked.
+01:03:01.759 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+01:03:03.480 INFO  Book.BookDetailController : Audit Trail View for Book
+01:03:03.507 ERROR Book.BookDetailController : No Audit Trail Exist
+01:03:06.538 INFO  View.Launcher : Closing connection...
+01:18:11.881 INFO  View.Launcher : Creating connection...
+01:18:12.969 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:18:15.622 INFO  Controller.MainMenuController : BookList button selected.
+01:18:16.651 INFO  Book.BookListController : Book double clicked.
+01:18:16.691 INFO  Book.BookDetailController : Now showing: Title Name: test book
+01:18:19.154 INFO  Book.BookDetailController : Audit Trail View for Book
+01:18:19.198 ERROR Book.BookDetailController : No Audit Trail Exist
+01:18:22.097 INFO  View.Launcher : Closing connection...
+01:19:48.236 INFO  View.Launcher : Creating connection...
+01:19:48.988 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:19:52.307 INFO  Controller.MainMenuController : BookList button selected.
+01:19:54.281 INFO  Book.BookListController : Book double clicked.
+01:19:54.314 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+01:19:56.869 INFO  Book.BookDetailController : Audit Trail View for Book
+01:19:56.899 ERROR Book.BookDetailController : No Audit Trail Exist
+01:20:01.915 INFO  Controller.MainMenuController : BookList button selected.
+01:20:03.424 INFO  Book.BookListController : Book double clicked.
+01:20:03.456 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:20:04.959 INFO  Book.BookDetailController : Audit Trail View for Book
+01:20:04.991 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:24:01.168 INFO  View.Launcher : Closing connection...
+01:33:50.547 INFO  View.Launcher : Creating connection...
+01:33:52.098 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:33:55.955 INFO  Controller.MainMenuController : BookList button selected.
+01:33:58.083 INFO  Book.BookListController : Book double clicked.
+01:33:58.138 INFO  Book.BookDetailController : Now showing: Title Name: another book
+01:34:02.490 INFO  Book.BookDetailController : Audit Trail View for Book
+01:34:02.522 ERROR Book.BookDetailController : No Audit Trail Exist
+01:34:06.741 INFO  View.Launcher : Closing connection...
+01:34:14.251 INFO  View.Launcher : Creating connection...
+01:34:15.746 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:34:43.654 INFO  Controller.MainMenuController : BookList button selected.
+01:34:46.964 INFO  Book.BookListController : Book double clicked.
+01:34:47.002 INFO  Book.BookDetailController : Now showing: Title Name: test book
+01:34:48.511 INFO  Book.BookDetailController : Audit Trail View for Book
+01:34:48.566 ERROR Book.BookDetailController : No Audit Trail Exist
+01:34:53.535 INFO  Controller.MainMenuController : BookList button selected.
+01:34:54.776 INFO  Book.BookListController : Book double clicked.
+01:34:54.804 INFO  Book.BookDetailController : Now showing: Title Name: another book
+01:34:55.957 INFO  Book.BookDetailController : Audit Trail View for Book
+01:34:55.982 ERROR Book.BookDetailController : No Audit Trail Exist
+01:34:58.998 INFO  Controller.MainMenuController : BookList button selected.
+01:35:00.403 INFO  Book.BookListController : Book double clicked.
+01:35:00.453 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:35:01.534 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:01.561 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:35:04.203 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:04.230 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:35:05.320 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:05.388 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:35:06.699 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:06.732 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:35:09.570 INFO  Controller.MainMenuController : BookList button selected.
+01:35:10.752 INFO  Book.BookListController : Book double clicked.
+01:35:10.801 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+01:35:11.832 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:11.857 ERROR Book.BookDetailController : No Audit Trail Exist
+01:35:13.966 INFO  View.Launcher : Closing connection...
+01:35:49.636 INFO  View.Launcher : Creating connection...
+01:35:50.781 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:35:54.233 INFO  Controller.MainMenuController : BookList button selected.
+01:35:55.966 INFO  Book.BookListController : Book double clicked.
+01:35:55.997 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:35:57.259 INFO  Book.BookDetailController : Audit Trail View for Book
+01:35:57.292 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:36:00.245 INFO  View.Launcher : Closing connection...
+01:42:55.703 INFO  View.Launcher : Creating connection...
+01:42:56.925 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:43:00.554 INFO  Controller.MainMenuController : BookList button selected.
+01:43:10.267 INFO  Book.BookListController : Book double clicked.
+01:43:10.303 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:43:12.815 INFO  Book.BookDetailController : Audit Trail View for Book
+01:43:12.847 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:43:16.282 INFO  View.Launcher : Closing connection...
+01:46:42.105 INFO  View.Launcher : Creating connection...
+01:46:43.882 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:46:47.553 INFO  Controller.MainMenuController : BookList button selected.
+01:46:49.203 INFO  Book.BookListController : Book double clicked.
+01:46:49.238 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:46:50.567 INFO  Book.BookDetailController : Audit Trail View for Book
+01:46:50.600 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:46:54.310 INFO  View.Launcher : Closing connection...
+01:52:13.014 INFO  View.Launcher : Creating connection...
+01:52:14.190 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:52:17.153 INFO  Controller.MainMenuController : BookList button selected.
+01:52:18.575 INFO  Book.BookListController : Book double clicked.
+01:52:18.608 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:52:19.759 INFO  Book.BookDetailController : Audit Trail View for Book
+01:52:19.807 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:52:22.706 INFO  View.Launcher : Closing connection...
+01:53:52.764 INFO  View.Launcher : Creating connection...
+01:53:53.949 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:53:56.947 INFO  Controller.MainMenuController : BookList button selected.
+01:53:58.573 INFO  Book.BookListController : Book double clicked.
+01:53:58.617 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:53:59.736 INFO  Book.BookDetailController : Audit Trail View for Book
+01:53:59.774 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:54:02.591 INFO  View.Launcher : Closing connection...
+01:59:08.256 INFO  View.Launcher : Creating connection...
+01:59:09.581 INFO  Controller.MainMenuController : Main Menu Loaded.
+01:59:12.992 INFO  Controller.MainMenuController : BookList button selected.
+01:59:14.312 INFO  Book.BookListController : Book double clicked.
+01:59:14.413 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+01:59:15.648 INFO  Book.BookDetailController : Audit Trail View for Book
+01:59:15.678 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+01:59:17.733 INFO  View.Launcher : Closing connection...
+02:01:35.703 INFO  View.Launcher : Creating connection...
+02:01:36.969 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:01:39.686 INFO  Controller.MainMenuController : BookList button selected.
+02:01:41.282 INFO  Book.BookListController : Book double clicked.
+02:01:41.313 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:01:42.245 INFO  Book.BookDetailController : Audit Trail View for Book
+02:01:42.275 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:01:44.625 INFO  View.Launcher : Closing connection...
+02:07:51.818 INFO  View.Launcher : Creating connection...
+02:07:53.123 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:07:56.417 INFO  Controller.MainMenuController : BookList button selected.
+02:07:58.090 INFO  Book.BookListController : Book double clicked.
+02:07:58.123 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:07:59.148 INFO  Book.BookDetailController : Audit Trail View for Book
+02:07:59.184 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:08:02.555 INFO  View.Launcher : Closing connection...
+02:10:10.456 INFO  View.Launcher : Creating connection...
+02:10:11.771 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:10:14.882 INFO  Controller.MainMenuController : BookList button selected.
+02:10:16.387 INFO  Book.BookListController : Book double clicked.
+02:10:16.418 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:10:17.487 INFO  Book.BookDetailController : Audit Trail View for Book
+02:10:17.524 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:10:20.286 INFO  View.Launcher : Closing connection...
+02:15:51.387 INFO  View.Launcher : Creating connection...
+02:15:52.715 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:15:55.529 INFO  Controller.MainMenuController : BookList button selected.
+02:15:57.170 INFO  Book.BookListController : Book double clicked.
+02:15:57.203 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:15:58.610 INFO  Book.BookDetailController : Audit Trail View for Book
+02:15:58.647 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:16:00.765 INFO  View.Launcher : Closing connection...
+02:18:36.329 INFO  View.Launcher : Creating connection...
+02:18:37.602 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:18:41.102 INFO  Controller.MainMenuController : BookList button selected.
+02:18:43.568 INFO  Book.BookListController : Book double clicked.
+02:18:43.598 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:18:47.351 INFO  View.Launcher : Closing connection...
+02:19:11.620 INFO  View.Launcher : Creating connection...
+02:19:12.962 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:19:18.327 INFO  Controller.MainMenuController : BookList button selected.
+02:19:20.405 INFO  Book.BookListController : Book double clicked.
+02:19:20.438 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:19:20.502 INFO  Book.BookDetailController : init
+02:19:23.362 INFO  View.Launcher : Closing connection...
+02:20:57.107 INFO  View.Launcher : Creating connection...
+02:20:58.357 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:21:01.581 INFO  Controller.MainMenuController : BookList button selected.
+02:21:03.421 INFO  Book.BookListController : Book double clicked.
+02:21:03.469 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:21:08.145 INFO  Book.BookDetailController : Audit Trail View for Book
+02:21:08.176 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:21:11.369 INFO  View.Launcher : Closing connection...
+02:23:45.320 INFO  View.Launcher : Creating connection...
+02:23:46.774 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:23:50.360 INFO  Controller.MainMenuController : BookList button selected.
+02:23:51.906 INFO  Book.BookListController : Book double clicked.
+02:23:51.941 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:23:53.652 INFO  Book.BookDetailController : Audit Trail View for Book
+02:23:53.681 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:23:53.683 INFO  View.SingletonSwitcher : before controller
+02:23:55.275 INFO  View.Launcher : Closing connection...
+02:28:04.781 INFO  View.Launcher : Creating connection...
+02:28:05.977 INFO  Controller.MainMenuController : Main Menu Loaded.
+02:28:08.746 INFO  Controller.MainMenuController : BookList button selected.
+02:28:10.192 INFO  Book.BookListController : Book double clicked.
+02:28:10.227 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+02:28:11.428 INFO  Book.BookDetailController : Audit Trail View for Book
+02:28:11.471 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+02:28:11.560 INFO  Book.BATListController : Initialize is working
+02:28:16.778 INFO  Book.BATListController : Back Button Pressed
+02:28:19.141 INFO  View.Launcher : Closing connection...
+04:10:45.011 INFO  View.Launcher : Creating connection...
+04:10:45.903 INFO  Controller.MainMenuController : Main Menu Loaded.
+04:10:50.665 INFO  Controller.MainMenuController : BookList button selected.
+04:10:53.286 INFO  Book.BookListController : Book double clicked.
+04:10:53.319 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+04:10:56.903 INFO  Controller.MainMenuController : BookList button selected.
+04:10:58.550 INFO  Book.BookListController : Book double clicked.
+04:10:58.591 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:10:59.955 INFO  Book.BookDetailController : Audit Trail View for Book
+04:11:00.230 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:11:00.398 INFO  Book.BATListController : Initialize is working
+04:11:36.681 INFO  Book.BATListController : Back Button Pressed
+04:12:00.262 INFO  Controller.MainMenuController : AddBook button selected.
+04:12:00.293 INFO  Book.BookDetailController : Now showing: Title Name: null
+04:12:02.356 INFO  Book.BookDetailController : Audit Trail View for Book
+04:12:02.383 ERROR Book.BookDetailController : No Audit Trail Exist
+04:12:06.190 INFO  Controller.MainMenuController : BookList button selected.
+04:12:08.183 INFO  Book.BookListController : Book double clicked.
+04:12:08.282 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+04:12:09.869 INFO  Book.BookDetailController : Audit Trail View for Book
+04:12:09.903 ERROR Book.BookDetailController : No Audit Trail Exist
+04:12:13.522 INFO  Controller.MainMenuController : BookList button selected.
+04:12:15.710 INFO  Book.BookListController : Book double clicked.
+04:12:15.739 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:12:17.021 INFO  Book.BookDetailController : Audit Trail View for Book
+04:12:17.052 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:12:17.088 INFO  Book.BATListController : Initialize is working
+04:12:19.881 INFO  View.Launcher : Closing connection...
+04:20:12.176 INFO  View.Launcher : Creating connection...
+04:20:13.022 INFO  Controller.MainMenuController : Main Menu Loaded.
+04:20:15.448 INFO  Controller.MainMenuController : BookList button selected.
+04:20:16.939 INFO  Book.BookListController : Book double clicked.
+04:20:16.973 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:20:18.227 INFO  Book.BookDetailController : Audit Trail View for Book
+04:20:18.259 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:20:18.374 INFO  Book.BATListController : Initialize is working
+04:20:19.949 INFO  Book.BATListController : Back Button Pressed
+04:20:19.949 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:20:24.446 INFO  View.Launcher : Closing connection...
+04:23:18.002 INFO  View.Launcher : Creating connection...
+04:23:18.769 INFO  Controller.MainMenuController : Main Menu Loaded.
+04:23:21.694 INFO  Controller.MainMenuController : BookList button selected.
+04:23:23.081 INFO  Book.BookListController : Book double clicked.
+04:23:23.113 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:23:24.559 INFO  Book.BookDetailController : Audit Trail View for Book
+04:23:24.590 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:23:27.448 INFO  View.Launcher : Closing connection...
+04:23:39.253 INFO  View.Launcher : Creating connection...
+04:23:40.003 INFO  Controller.MainMenuController : Main Menu Loaded.
+04:23:43.148 INFO  Controller.MainMenuController : BookList button selected.
+04:23:44.686 INFO  Book.BookListController : Book double clicked.
+04:23:44.734 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:23:47.802 INFO  Book.BookDetailController : Audit Trail View for Book
+04:23:47.835 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:23:49.667 INFO  View.Launcher : Closing connection...
+04:24:59.299 INFO  View.Launcher : Creating connection...
+04:25:00.039 INFO  Controller.MainMenuController : Main Menu Loaded.
+04:25:03.205 INFO  Controller.MainMenuController : BookList button selected.
+04:25:04.529 INFO  Book.BookListController : Book double clicked.
+04:25:04.564 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:25:06.043 INFO  Book.BookDetailController : Audit Trail View for Book
+04:25:06.076 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:25:06.166 INFO  Book.BATListController : Initialize is working
+04:25:07.996 INFO  Book.BATListController : Back Button Pressed
+04:25:08.030 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:25:16.225 INFO  Book.BookDetailController : Audit Trail View for Book
+04:25:16.254 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+04:25:16.295 INFO  Book.BATListController : Initialize is working
+04:25:19.968 INFO  Book.BATListController : Back Button Pressed
+04:25:19.997 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+04:25:22.017 INFO  View.Launcher : Closing connection...
+12:15:13.012 INFO  View.Launcher : Creating connection...
+12:15:13.696 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:15:19.824 INFO  Controller.MainMenuController : BookList button selected.
+12:15:21.656 INFO  Book.BookListController : Book double clicked.
+12:15:21.688 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:15:53.796 INFO  Book.BookDetailController : Book's info is saved
+12:15:56.339 INFO  Book.BookDetailController : Audit Trail View for Book
+12:15:56.376 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+12:15:56.438 INFO  Book.BATListController : Initialize is working
+12:16:03.437 INFO  Book.BATListController : Back Button Pressed
+12:16:03.470 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:16:06.155 INFO  Controller.MainMenuController : BookList button selected.
+12:16:07.509 INFO  Book.BookListController : Book double clicked.
+12:16:07.537 INFO  Book.BookDetailController : Now showing: Title Name: test book
+12:16:09.546 INFO  Book.BookDetailController : Audit Trail View for Book
+12:16:09.574 ERROR Book.BookDetailController : No Audit Trail Exist
+12:16:14.079 INFO  Controller.MainMenuController : AddBook button selected.
+12:16:14.109 INFO  Book.BookDetailController : Now showing: Title Name: null
+12:16:36.869 INFO  Book.BookDetailController : Book's info is saved
+12:16:43.796 INFO  Book.BookDetailController : Book's info is saved
+12:16:43.848 INFO  Database.BookTableGateway : New id for book is 6
+12:16:47.543 INFO  Book.BookDetailController : Audit Trail View for Book
+12:16:47.645 ERROR Book.BookDetailController : No Audit Trail Exist
+12:16:51.619 INFO  View.Launcher : Closing connection...
+12:19:16.415 INFO  View.Launcher : Creating connection...
+12:19:17.225 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:19:24.288 INFO  Controller.MainMenuController : BookList button selected.
+12:19:29.890 INFO  Book.BookListController : Book double clicked.
+12:19:29.948 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:19:32.254 INFO  Book.BookDetailController : Audit Trail View for Book
+12:19:32.284 INFO  Book.BookDetailController : Audits: [Publisher's Name: THIS IS TEST TO SEE IF THIS WORKS]
+12:19:32.403 INFO  Book.BATListController : Initialize is working
+12:19:35.446 INFO  Book.BATListController : Back Button Pressed
+12:19:35.471 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:19:38.880 INFO  Controller.MainMenuController : BookList button selected.
+12:19:40.695 INFO  Book.BookListController : Book double clicked.
+12:19:40.727 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+12:19:42.829 INFO  Book.BookDetailController : Audit Trail View for Book
+12:19:42.857 ERROR Book.BookDetailController : No Audit Trail Exist
+12:20:09.323 INFO  Book.BookDetailController : Book's info is saved
+12:20:14.122 INFO  Book.BookDetailController : Audit Trail View for Book
+12:20:14.151 ERROR Book.BookDetailController : No Audit Trail Exist
+12:20:18.373 INFO  Controller.MainMenuController : BookList button selected.
+12:20:24.495 INFO  Book.BookListController : Book double clicked.
+12:20:24.522 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:20:28.818 INFO  Controller.MainMenuController : BookList button selected.
+12:20:30.407 INFO  Book.BookListController : Book double clicked.
+12:20:30.436 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+12:20:32.650 INFO  Book.BookDetailController : Audit Trail View for Book
+12:20:32.683 ERROR Book.BookDetailController : No Audit Trail Exist
+12:20:40.566 INFO  View.Launcher : Closing connection...
+12:38:47.891 INFO  View.Launcher : Creating connection...
+12:38:48.667 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:38:51.464 INFO  Controller.MainMenuController : BookList button selected.
+12:38:53.457 INFO  Book.BookListController : Book double clicked.
+12:38:53.489 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:38:55.625 INFO  Book.BookDetailController : Audit Trail View for Book
+12:38:55.657 INFO  Book.BookDetailController : Audits: [The Message is: THIS IS TEST TO SEE IF THIS WORKS]
+12:38:55.763 INFO  Book.BATListController : Initialize is working
+12:39:18.609 INFO  Book.BATListController : Back Button Pressed
+12:39:18.636 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:39:23.847 INFO  Controller.MainMenuController : BookList button selected.
+12:39:24.975 INFO  Book.BookListController : Book double clicked.
+12:39:25.006 INFO  Book.BookDetailController : Now showing: Title Name: one more test 
+12:39:31.140 INFO  Book.BookDetailController : Audit Trail View for Book
+12:39:31.168 ERROR Book.BookDetailController : No Audit Trail Exist
+12:39:35.165 INFO  View.Launcher : Closing connection...
+12:46:33.586 INFO  View.Launcher : Creating connection...
+12:46:34.449 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:46:37.891 INFO  Controller.MainMenuController : BookList button selected.
+12:46:39.372 INFO  Book.BookListController : Book double clicked.
+12:46:39.405 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:46:40.797 INFO  Book.BookDetailController : Audit Trail View for Book
+12:46:40.835 INFO  Book.BookDetailController : Audits: [The Message is: THIS IS TEST TO SEE IF THIS WORKS]
+12:46:40.889 INFO  Book.BATListController : Initialize is working
+12:47:11.150 INFO  Book.BATListController : Back Button Pressed
+12:47:11.178 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+12:47:15.940 INFO  View.Launcher : Closing connection...
+12:55:16.330 INFO  View.Launcher : Creating connection...
+12:55:17.074 INFO  Controller.MainMenuController : Main Menu Loaded.
+12:55:20.173 INFO  Controller.MainMenuController : BookList button selected.
+12:55:22.601 INFO  Book.BookListController : Book double clicked.
+12:55:22.634 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+12:55:24.283 INFO  Book.BookDetailController : Audit Trail View for Book
+12:55:24.311 ERROR Book.BookDetailController : No Audit Trail Exist
+12:55:29.119 INFO  Controller.MainMenuController : AddBook button selected.
+12:55:29.147 INFO  Book.BookDetailController : Now showing: Title Name: null
+12:55:53.492 INFO  Book.BookDetailController : Book's info is saved
+12:55:53.578 INFO  Database.BookTableGateway : New id for book is 7
+12:55:55.305 INFO  Book.BookDetailController : Audit Trail View for Book
+12:55:55.332 ERROR Book.BookDetailController : No Audit Trail Exist
+12:56:00.203 INFO  Controller.MainMenuController : BookList button selected.
+12:56:05.496 INFO  Book.BookListController : Book double clicked.
+12:56:06.248 INFO  Book.BookListController : Book double clicked.
+12:56:06.276 INFO  Book.BookDetailController : Now showing: Title Name: dsjkfd
+12:56:10.309 INFO  Book.BookDetailController : Audit Trail View for Book
+12:56:10.342 ERROR Book.BookDetailController : No Audit Trail Exist
+12:56:17.858 INFO  Controller.MainMenuController : BookList button selected.
+12:56:30.624 INFO  View.Launcher : Closing connection...
+13:33:00.972 INFO  View.Launcher : Creating connection...
+13:33:01.776 INFO  Controller.MainMenuController : Main Menu Loaded.
+13:33:04.658 INFO  Controller.MainMenuController : BookList button selected.
+13:33:07.993 INFO  Book.BookListController : Book double clicked.
+13:33:08.045 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+13:33:24.768 INFO  Book.BookDetailController : Book's info is saved
+13:33:26.809 INFO  Book.BookDetailController : Audit Trail View for Book
+13:33:26.843 ERROR Book.BookDetailController : No Audit Trail Exist
+13:33:32.648 INFO  Controller.MainMenuController : BookList button selected.
+13:33:34.643 INFO  Book.BookListController : Book double clicked.
+13:33:34.671 INFO  Book.BookDetailController : Now showing: Title Name: Jherm Test
+13:33:36.891 INFO  Book.BookDetailController : Audit Trail View for Book
+13:33:36.920 ERROR Book.BookDetailController : No Audit Trail Exist
+13:33:40.356 INFO  View.Launcher : Closing connection...
+13:47:27.866 INFO  View.Launcher : Creating connection...
+13:47:29.885 INFO  Controller.MainMenuController : Main Menu Loaded.
+13:47:32.056 INFO  Controller.MainMenuController : BookList button selected.
+13:47:34.454 INFO  Book.BookListController : Book double clicked.
+13:47:34.486 INFO  Book.BookDetailController : Now showing: Title Name: another book
+13:48:04.648 INFO  Book.BookDetailController : Book's info is saved
+13:48:06.199 INFO  Book.BookDetailController : Audit Trail View for Book
+13:48:06.232 ERROR Book.BookDetailController : No Audit Trail Exist
+13:48:17.033 INFO  View.Launcher : Closing connection...
+13:49:35.308 INFO  View.Launcher : Creating connection...
+13:49:35.999 INFO  Controller.MainMenuController : Main Menu Loaded.
+13:49:40.308 INFO  Controller.MainMenuController : BookList button selected.
+13:49:42.039 INFO  Book.BookListController : Book double clicked.
+13:49:42.073 INFO  Book.BookDetailController : Now showing: Title Name: another book to TEST
+13:49:49.833 INFO  Book.BookDetailController : Book's info is saved
+13:49:51.425 INFO  Book.BookDetailController : Audit Trail View for Book
+13:49:51.454 ERROR Book.BookDetailController : No Audit Trail Exist
+13:49:55.522 INFO  Controller.MainMenuController : BookList button selected.
+13:49:56.504 INFO  Book.BookListController : Book double clicked.
+13:49:56.780 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+13:49:57.634 INFO  Book.BookDetailController : Audit Trail View for Book
+13:49:57.664 INFO  Book.BookDetailController : Audits: [The Message is: THIS IS TEST TO SEE IF THIS WORKS]
+13:49:57.716 INFO  Book.BATListController : Initialize is working
+13:50:01.119 INFO  Book.BATListController : Back Button Pressed
+13:50:01.147 INFO  Book.BookDetailController : Now showing: Title Name: Jheremi Book
+13:50:03.562 INFO  Controller.MainMenuController : BookList button selected.
+13:50:04.820 INFO  Book.BookListController : Book double clicked.
+13:50:04.848 INFO  Book.BookDetailController : Now showing: Title Name: another book to TEST
+13:50:05.886 INFO  Book.BookDetailController : Audit Trail View for Book
+13:50:05.914 ERROR Book.BookDetailController : No Audit Trail Exist
+13:50:07.887 INFO  View.Launcher : Closing connection...

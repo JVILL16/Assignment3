@@ -10,7 +10,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Book.Publisher;
+import Model.Publisher;
 import View.Launcher;
 
 public class PublisherTableGateway {

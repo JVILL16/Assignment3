@@ -5,14 +5,16 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Book.Book;
-import Book.Publisher;
+import Model.AuditTrailEntrys;
+import Model.Book;
+import Model.Publisher;
 import View.Launcher;
 
 public class BookTableGateway {
@@ -63,7 +65,7 @@ public class BookTableGateway {
 			ResultSet rs = st.getGeneratedKeys();
 			rs.first();
 			book.setId(rs.getInt(1));
-			
+			book.getAudits();
 			logger.info("New id for book is " + book.getId());
 			
 			rs.close();
@@ -92,6 +94,7 @@ public class BookTableGateway {
 			st.setString(5, book.getISBN());
 			st.setDate(6, Date.valueOf(book.getDate()));
 			st.setInt(7, book.getId());
+			book.getAudits();
 			st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -151,8 +154,6 @@ public class BookTableGateway {
 
 			try {
 				
-				//conn = ConnectionFactory.createConnection();
-				
 				String query = "select * from BookTable inner join PublisherTable p on publisher_id = p.id";
 				if(search != null)
 					query += " where title like ?";
@@ -188,6 +189,68 @@ public class BookTableGateway {
 			}
 			return books;
 		}
+	public List<AuditTrailEntrys> getAuditTrail(Book book) throws AppException {
+		List<AuditTrailEntrys> audits = new ArrayList<>();
+	
+		PreparedStatement st = null;
+	
+		try {
+			st = conn.prepareStatement("select * from BookAuditTrailTable where book_id = ? order by date_added ASC");
+			st.setInt(1,book.getId());
+	
+			ResultSet rs = st.executeQuery();
+			while(rs.next()) {
+				int id = rs.getInt("id");
+				Timestamp batDateAdded = rs.getTimestamp("date_added"); 
+				String message = rs.getString("entry_msg");
+				AuditTrailEntrys audit = new AuditTrailEntrys(batDateAdded.toLocalDateTime(), message);
+				audit.setId(id);
+				audit.setBook(book);
+				audits.add(audit);
+				
+				/*audit.setMessage(rs.getString("entry_msg"));
+				audit.setBatDate(rs.getDate("date_added").toLocalDate());
 		
+				//audit.setBookGateway(this);
+				audit.setId(rs.getInt("id"));
+				audits.add(audit);*/
+			}
+		} catch (SQLException e) {
+	
+		///e.printStackTrace();
+			throw new AppException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw new AppException(e);
+			}
+		}
+		return audits;
+	}
+	/*public void add(AuditTrailEntrys obj) throws AppException {
+		PreparedStatement st = null;
+		try {
+			st = conn.prepareStatement("insert into BookAuditTrailTable(id, book_id, entry_msg) values(null, ?, ?)");
+			st.setInt(1, obj.getBook().getId());
+			st.setString(2, obj.getMessage());
+			st.executeUpdate();
+			
+			logger.info("Saving Audit: " + obj.getMessage());
+		}  catch (SQLException e) {
+			e.printStackTrace();
+			throw new AppException("AuditEntry save failed");
+		}finally {
+			try {
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw new AppException(e);
+			}
+		}
+	}*/
 }
 
